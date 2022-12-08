@@ -43,7 +43,7 @@ function SearchResult() {
                   <div
                     className="flex-box search-item"
                     onClick={(e) =>
-                      navigate(`/git-user-finder/user?u=${em.login}`)
+                      navigate(`/user?u=${em.login}`)
                     }
                     key={em.login}
                   >

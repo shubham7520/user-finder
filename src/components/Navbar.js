@@ -15,7 +15,7 @@ function Navbar({ searchText, setSearchText }) {
             onKeyUp={(e) => {
               const keyCode = e.code;
               if (keyCode === "Enter") {
-                navigate(`/git-user-finder/search?q=${searchText}`);
+                navigate(`/search?q=${searchText}`);
                 window.location.reload();
               }
             }}
@@ -23,7 +23,7 @@ function Navbar({ searchText, setSearchText }) {
           <div
             className="search-btn"
             onClick={(e) => {
-              navigate(`/git-user-finder/search?q=${searchText}`);
+              navigate(`/search?q=${searchText}`);
               window.location.reload();
             }}
           >

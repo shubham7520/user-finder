@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
       <Navbar searchText={searchText} setSearchText={setSearchText} />
       <Routes>
-        <Route path="/git-user-finder" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route
-          path="/git-user-finder/search"
+          path="/search"
           element={<SearchResult searchText={searchText} />}
         />
-        <Route path="/git-user-finder/user" element={<UserResult />} />
+        <Route path="/user" element={<UserResult />} />
       </Routes>
     </BrowserRouter>
   );
